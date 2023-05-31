@@ -1,0 +1,5 @@
+/src/vendor
+/src/storage
+/src/docker/storage
+/src/.env
+/src/.phpunit.result.cache
