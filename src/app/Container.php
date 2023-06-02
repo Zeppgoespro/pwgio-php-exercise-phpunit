@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App;
 
 use Psr\Container\ContainerInterface;
-use App\Exception\Container\ContainerException;
+use App\Exceptions\Container\ContainerException;
 
 class Container implements ContainerInterface
 {
@@ -51,7 +51,7 @@ class Container implements ContainerInterface
     $constructor = $reflection_class->getConstructor();
 
     if (! $constructor):
-      #$reflection_class->newInstance();
+      # $reflection_class->newInstance();
       return new $id;
     endif;
 

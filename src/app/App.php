@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App;
 
-use App\Exception\RouteNotFoundException;
+use App\Exceptions\RouteNotFoundException;
 use App\Services\PaymentGatewayService;
 use App\Services\PaymentGatewayServiceInterface;
 use App\Services\AnotherPaymentGatewayService;
