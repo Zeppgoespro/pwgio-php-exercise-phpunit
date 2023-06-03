@@ -19,8 +19,8 @@ class App
     static::$db = new DB($config->db ?? []);
 
     # $this->container->set(PaymentGatewayServiceInterface::class, fn(Container $c) => $c->get(PaymentGatewayService::class));
-
     # $this->container->set(PaymentGatewayServiceInterface::class, PaymentGatewayService::class);
+
     $this->container->set(PaymentGatewayServiceInterface::class, AnotherPaymentGatewayService::class);
   }
 

@@ -11,9 +11,9 @@ class ContainerDataProvider
   {
     return [
       # Missing type hint scenario
-      'Tests\Unit\WithoutTypeHinting',
+      ['Tests\Unit\WithoutTypeHinting'],
       # Union type scenario
-      'Tests\Unit\WithUnionTypes'
+      ['Tests\Unit\WithUnionTypes']
     ];
   }
 
