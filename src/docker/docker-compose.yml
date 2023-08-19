@@ -11,7 +11,7 @@ services:
     volumes:
       - ../:/var/www
   nginx:
-    image: nginx:1.23-alpine
+    image: nginx:1.25-alpine
     container_name: pwgio-nginx
     restart: unless-stopped
     ports:
@@ -21,7 +21,7 @@ services:
       - ./nginx:/etc/nginx/conf.d
   database:
     container_name: pwgio-db
-    image: mysql:8
+    image: mysql:8.0
     volumes:
       - ./storage/mysql:/var/lib/mysql
     restart: unless-stopped

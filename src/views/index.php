@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <p>Home page</p>
+  <p>Hello there! Be happy</p>
 
   <hr />
 

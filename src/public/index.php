@@ -20,8 +20,8 @@ $container = new Container;
 $router = new Router($container);
 
 $router->get('/', [HomeController::class, 'index']);
-$router->get('/download', [HomeController::class, 'download']);
-$router->post('/upload', [HomeController::class, 'upload']);
+$router->get('/download', [HomeController::class, 'download']); # 404
+$router->post('/upload', [HomeController::class, 'upload']); # 404
 
 (new App(
   $container,
