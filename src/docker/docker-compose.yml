@@ -29,3 +29,12 @@ services:
       MYSQL_ROOT_PASSWORD: yesenin
     ports:
       - "3306:3306"
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    container_name: phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+    restart: unless-stopped # or 'always'
+    ports:
+      - '8001:80'
